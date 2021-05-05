@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankApp.DataAccess", "BankA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankApp.Model", "BankApp.Model\BankApp.Model.csproj", "{B081C90E-5CD5-446E-B82D-1441E5735A70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankApp.UI.Themes", "BankApp.UI.Themes\BankApp.UI.Themes.csproj", "{5E0D81A2-1A0A-4B43-9A49-069902F008C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankApp.UI.Themes", "BankApp.UI.Themes\BankApp.UI.Themes.csproj", "{8C2C84D0-14FE-4E52-ADDC-3FF5CBECF572}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{B081C90E-5CD5-446E-B82D-1441E5735A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B081C90E-5CD5-446E-B82D-1441E5735A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B081C90E-5CD5-446E-B82D-1441E5735A70}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5E0D81A2-1A0A-4B43-9A49-069902F008C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5E0D81A2-1A0A-4B43-9A49-069902F008C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5E0D81A2-1A0A-4B43-9A49-069902F008C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5E0D81A2-1A0A-4B43-9A49-069902F008C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C2C84D0-14FE-4E52-ADDC-3FF5CBECF572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C2C84D0-14FE-4E52-ADDC-3FF5CBECF572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C2C84D0-14FE-4E52-ADDC-3FF5CBECF572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C2C84D0-14FE-4E52-ADDC-3FF5CBECF572}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
