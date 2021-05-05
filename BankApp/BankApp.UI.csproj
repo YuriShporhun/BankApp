@@ -10,4 +10,8 @@
     <Folder Include="ViewModels\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BankApp.UI.Themes\BankApp.UI.Themes.csproj" />
+  </ItemGroup>
+
 </Project>
