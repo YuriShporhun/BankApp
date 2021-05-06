@@ -1,6 +1,8 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:theme="clr-namespace:BankApp.UI.Themes">
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Styles/ButtonStyles.xaml"></ResourceDictionary>
+        <theme:ThemeResourceDictionary/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
