@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankApp.UI", "BankApp\BankApp.UI.csproj", "{97906D74-9A2F-4482-9C18-2819EEA039B7}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankApp.DataAccess", "BankApp.DataAccess\BankApp.DataAccess.csproj", "{BB04CC37-F89F-40C7-8A1B-8346BA8A5597}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankApp.Model", "BankApp.Model\BankApp.Model.csproj", "{B081C90E-5CD5-446E-B82D-1441E5735A70}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankApp.UI.Themes", "BankApp.UI.Themes\BankApp.UI.Themes.csproj", "{8C2C84D0-14FE-4E52-ADDC-3FF5CBECF572}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankApp.UI.Themes", "BankApp.UI.Themes\BankApp.UI.Themes.csproj", "{8C2C84D0-14FE-4E52-ADDC-3FF5CBECF572}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankApp.UI", "BankApp.UI\BankApp.UI.csproj", "{4F4A140B-7035-4507-A223-130E1ABBD738}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{97906D74-9A2F-4482-9C18-2819EEA039B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97906D74-9A2F-4482-9C18-2819EEA039B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97906D74-9A2F-4482-9C18-2819EEA039B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97906D74-9A2F-4482-9C18-2819EEA039B7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BB04CC37-F89F-40C7-8A1B-8346BA8A5597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BB04CC37-F89F-40C7-8A1B-8346BA8A5597}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB04CC37-F89F-40C7-8A1B-8346BA8A5597}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{8C2C84D0-14FE-4E52-ADDC-3FF5CBECF572}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C2C84D0-14FE-4E52-ADDC-3FF5CBECF572}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C2C84D0-14FE-4E52-ADDC-3FF5CBECF572}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F4A140B-7035-4507-A223-130E1ABBD738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F4A140B-7035-4507-A223-130E1ABBD738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F4A140B-7035-4507-A223-130E1ABBD738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F4A140B-7035-4507-A223-130E1ABBD738}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
