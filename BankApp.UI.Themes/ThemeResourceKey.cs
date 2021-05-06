@@ -7,6 +7,5 @@ namespace BankApp.UI.Themes
     public enum ThemeResourceKey
     {
         WindowBackground,
-        WindowForeground
     }
 }

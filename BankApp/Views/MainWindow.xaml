@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BankApp"
         mc:Ignorable="d"
+        xmlns:theme="clr-namespace:BankApp.UI.Themes;assembly=BankApp.UI.Themes" 
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button></Button>
+    <Grid Background="{theme:ThemeResource ResourceKey=WindowBackground}">
+        <Button Width="50" Height="50" Click="Button_Click">123</Button>
     </Grid>
 </Window>
