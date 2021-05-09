@@ -6,11 +6,14 @@
         xmlns:local="clr-namespace:BankApp"
         mc:Ignorable="d"
         xmlns:theme="clr-namespace:BankApp.UI.Themes;assembly=BankApp.UI.Themes" 
-        xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+        xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp" 
+        xmlns:views="clr-namespace:BankApp.UI.Views"
+        xmlns:viewmodels="clr-namespace:BankApp.UI.ViewModels"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="{theme:ThemeResource ResourceKey=WindowBackground}">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="65"></ColumnDefinition> 
+            <ColumnDefinition Width="65"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions></Grid.RowDefinitions>
         <StackPanel Background="#DCE1E3">
@@ -59,5 +62,14 @@
                 </Button.Content>
             </Button>
         </StackPanel>
+        <ContentControl
+            Grid.Column="1"
+            Content="{Binding CurrentViewModel}">
+            <ContentControl.Resources>
+                <DataTemplate DataType="{x:Type viewmodels:LoginViewModel}">
+                    <views:LoginView />
+                </DataTemplate>
+            </ContentControl.Resources>
+        </ContentControl>
     </Grid>
 </Window>

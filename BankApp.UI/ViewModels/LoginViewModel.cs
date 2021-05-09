@@ -4,7 +4,7 @@ using System.Text;
 
 namespace BankApp.UI.ViewModels
 {
-    class MainWindowViewModel
+    public class LoginViewModel: ViewModelBase
     {
     }
 }
