@@ -39,7 +39,7 @@ namespace BankApp.UI.Themes
                     break;
                 case ThemeType.Light:
                     SetResource(ThemeResourceKey.WindowBackground.ToString(),
-                        new SolidColorBrush(Color.FromArgb(255, 240, 240, 240)));
+                        new SolidColorBrush(Color.FromArgb(255, 92, 95, 88)));
                     break;
                 case ThemeType.Green:
                     break;
