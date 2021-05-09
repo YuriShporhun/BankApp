@@ -21,7 +21,8 @@ namespace BankApp
             { 
                 DataContext = mainViewModel 
             };
-            mainWindow.ShowDialog();
+            mainWindow.Show();
+            base.OnStartup(e);
         }
     }
 }

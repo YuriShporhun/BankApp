@@ -12,55 +12,74 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="{theme:ThemeResource ResourceKey=WindowBackground}">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="65"></ColumnDefinition>
+            <ColumnDefinition Width="70"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions></Grid.RowDefinitions>
-        <StackPanel Background="#DCE1E3">
-            <Button Width="65" Height="65" Background="#DCE1E3">
+        <StackPanel Background="#293a4c">
+            <Button Width="70" Height="55" Background="#293a4c">
                 <Button.Content>
                     <StackPanel>
-                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="Bars" Foreground="#591c0b" FontSize="30" />
+                        <fa:IconBlock Width="35" Height="35" Padding="0 8 0 0" Icon="Bars" Foreground="#8393a3" FontSize="20" />
                     </StackPanel>
                 </Button.Content>
             </Button>
 
-            <Button Width="65" Height="65" Background="#DCE1E3">
+            <Button Width="70" Height="55" Background="#293a4c">
                 <Button.Content>
                     <StackPanel>
-                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="PeopleArrows" Foreground="#591c0b" FontSize="30" />
-                        <TextBlock Foreground="Black">Клиенты</TextBlock>
+                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="PeopleArrows" Foreground="#8393a3" FontSize="25" />
+                        <TextBlock Foreground="#889798">Клиенты</TextBlock>
                     </StackPanel>
                 </Button.Content>
             </Button>
 
-            <Button Width="65" Height="65" Background="#DCE1E3">
+            <Button Width="70" Height="55" Background="#293a4c">
                 <Button.Content>
                     <StackPanel>
-                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="MoneyCheck" Foreground="#591c0b" FontSize="30" />
-                        <TextBlock Foreground="Black">Счета</TextBlock>
+                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="MoneyCheck" Foreground="#8393a3" FontSize="25" />
+                        <TextBlock Foreground="#889798">Счета</TextBlock>
                     </StackPanel>
                 </Button.Content>
             </Button>
 
-            <Button Width="65" Height="65" Background="#DCE1E3">
+            <Button Width="70" Height="55" Background="#293a4c">
                 <Button.Content>
                     <StackPanel>
-                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="MoneyBillAlt" Foreground="#591c0b" FontSize="28" />
-                        <TextBlock Foreground="Black">Кредиты</TextBlock>
+                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="MoneyBillAlt" Foreground="#8393a3" FontSize="25" />
+                        <TextBlock Foreground="#889798">Кредиты</TextBlock>
                     </StackPanel>
                 </Button.Content>
             </Button>
 
-
-            <Button Width="65" Height="65" Background="#DCE1E3">
+            <Button Width="70" Height="55" Background="#293a4c">
                 <Button.Content>
                     <StackPanel>
-                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="Key" Foreground="#591c0b" FontSize="28" />
-                        <TextBlock Foreground="Black" TextAlignment="Center">Вход</TextBlock>
+                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="Comment" Foreground="#8393a3" FontSize="25" />
+                        <TextBlock Foreground="#889798" TextAlignment="Center">Чат</TextBlock>
                     </StackPanel>
                 </Button.Content>
             </Button>
+
+            <Button Width="70" Height="55" Background="#293a4c">
+                <Button.Content>
+                    <StackPanel>
+                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="Cog" Foreground="#8393a3" FontSize="25" />
+                        <TextBlock Foreground="#889798" TextAlignment="Center">Настройки</TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+
+            <Button Width="70" Height="55" Background="#293a4c">
+                <Button.Content>
+                    <StackPanel>
+                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="Key" Foreground="#8393a3" FontSize="25" />
+                        <TextBlock Foreground="#889798" TextAlignment="Center">Вход</TextBlock>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            
+            
         </StackPanel>
         <ContentControl
             Grid.Column="1"
