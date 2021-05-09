@@ -9,14 +9,29 @@
         xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp" 
         xmlns:views="clr-namespace:BankApp.UI.Views"
         xmlns:viewmodels="clr-namespace:BankApp.UI.ViewModels"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" WindowStyle="None"
+        Margin="0"
+        Padding="0"
+        ResizeMode="NoResize">
+
     <Grid Background="{theme:ThemeResource ResourceKey=WindowBackground}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="70"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions></Grid.RowDefinitions>
-        <StackPanel Background="#293a4c">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.ColumnSpan="2">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#f1f1f1"></SolidColorBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        
+        
+        <StackPanel Background="#293a4c" Grid.Row="1">
             <Button Width="70" Height="55" Background="#293a4c">
                 <Button.Content>
                     <StackPanel>
@@ -83,6 +98,7 @@
         </StackPanel>
         <ContentControl
             Grid.Column="1"
+            Grid.Row="1"
             Content="{Binding CurrentViewModel}">
             <ContentControl.Resources>
                 <DataTemplate DataType="{x:Type viewmodels:LoginViewModel}">
