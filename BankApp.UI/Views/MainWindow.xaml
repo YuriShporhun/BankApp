@@ -26,18 +26,23 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.ColumnSpan="2">
-            <Label Height="20">
-                <i:Interaction.Triggers>
-                    <i:EventTrigger EventName="MouseDown" >
-                        <i:InvokeCommandAction Command="{Binding DragWindow}" CommandParameter="{Binding ElementName=mainwnd}" />
-                    </i:EventTrigger>
-                </i:Interaction.Triggers>
-                <Label.Background>
-                    <SolidColorBrush Color="#f1f1f1"></SolidColorBrush>
-                </Label.Background>
-            </Label>
-        </StackPanel>
+        <DockPanel Height="20" Grid.ColumnSpan="2">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="MouseDown" >
+                    <i:InvokeCommandAction Command="{Binding DragWindow}" CommandParameter="{Binding ElementName=mainwnd}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+            <DockPanel.Background>
+                <SolidColorBrush Color="#f1f1f1"/>
+            </DockPanel.Background>
+            <DockPanel.Children>
+                <StackPanel Orientation="Horizontal" Width="100" HorizontalAlignment="Right">
+                    <TextBlock Width="20" Foreground="#9a9a9a" fa:Awesome.Inline=":windowminimize:"/>
+                    <TextBlock Width="20" Foreground="#9a9a9a" fa:Awesome.Inline=":windowmaximize:"/>
+                    <TextBlock Width="20" Foreground="#9a9a9a" fa:Awesome.Inline=":times:"/>
+                </StackPanel>
+            </DockPanel.Children>
+        </DockPanel>
 
 
         <StackPanel Background="#293a4c" Grid.Row="1">
