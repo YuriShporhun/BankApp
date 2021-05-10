@@ -14,7 +14,7 @@
         Title="MainWindow" Height="450" Width="800" WindowStyle="None"
         Margin="0"
         Padding="0"
-        ResizeMode="NoResize">
+        ResizeMode="NoResize" FontFamily="Segoe UI">
     
     <Grid Background="{theme:ThemeResource ResourceKey=WindowBackground}">
         <Grid.ColumnDefinitions>
@@ -37,9 +37,9 @@
             </DockPanel.Background>
             <DockPanel.Children>
                 <StackPanel Orientation="Horizontal" Width="60" HorizontalAlignment="Right">
-                    <TextBlock Width="20" Foreground="#9a9a9a" fa:Awesome.Inline=":windowminimize:"/>
-                    <TextBlock Width="20" Foreground="#9a9a9a" fa:Awesome.Inline=":windowmaximize:"/>
-                    <TextBlock Width="20" Foreground="#9a9a9a" fa:Awesome.Inline=":times:"/>
+                    <TextBlock Padding="0 3 0 0" TextAlignment="Center" Width="20" Foreground="#9a9a9a" fa:Awesome.Inline=":windowminimize:"/>
+                    <TextBlock Padding="0 3 0 0" TextAlignment="Center" Width="20" Foreground="#9a9a9a" fa:Awesome.Inline=":windowmaximize:"/>
+                    <TextBlock Padding="0 3 0 0" TextAlignment="Center" Width="20" Foreground="#9a9a9a" fa:Awesome.Inline=":times:"/>
                 </StackPanel>
             </DockPanel.Children>
         </DockPanel>
@@ -49,30 +49,30 @@
             <Button Width="70" Height="55" Background="#293a4c">
                 <Button.Content>
                     <StackPanel>
-                        <fa:IconBlock Width="35" Height="35" Padding="0 8 0 0" Icon="Bars" Foreground="#8393a3" FontSize="20" />
+                        <fa:IconBlock Width="35" Height="35" Padding="0 8 0 0" Icon="Bars" Foreground="#8393a3" FontSize="18" />
                     </StackPanel>
                 </Button.Content>
             </Button>
 
-            <Button Width="70" Height="55" Background="#293a4c">
+            <Button Width="70" Height="60" Background="#293a4c">
                 <Button.Content>
                     <StackPanel>
-                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="PeopleArrows" Foreground="#8393a3" FontSize="25" />
+                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="PeopleArrows" Foreground="#8393a3" FontSize="22" />
                         <TextBlock Foreground="#889798">Клиенты</TextBlock>
                     </StackPanel>
                 </Button.Content>
             </Button>
 
-            <Button Width="70" Height="55" Background="#293a4c">
+            <Button Width="70" Height="60" Background="#293a4c">
                 <Button.Content>
                     <StackPanel>
-                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="MoneyCheck" Foreground="#8393a3" FontSize="25" />
+                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="MoneyCheck" Foreground="#8393a3" FontSize="22" />
                         <TextBlock Foreground="#889798">Счета</TextBlock>
                     </StackPanel>
                 </Button.Content>
             </Button>
 
-            <Button Width="70" Height="55" Background="#293a4c">
+            <Button Width="70" Height="60" Background="#293a4c">
                 <Button.Content>
                     <StackPanel>
                         <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="MoneyBillAlt" Foreground="#8393a3" FontSize="25" />
@@ -81,25 +81,25 @@
                 </Button.Content>
             </Button>
 
-            <Button Width="70" Height="55" Background="#293a4c">
+            <Button Width="70" Height="60" Background="#293a4c">
                 <Button.Content>
                     <StackPanel>
-                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="Comment" Foreground="#8393a3" FontSize="25" />
+                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="Comment" Foreground="#8393a3" FontSize="22" />
                         <TextBlock Foreground="#889798" TextAlignment="Center">Чат</TextBlock>
                     </StackPanel>
                 </Button.Content>
             </Button>
 
-            <Button Width="70" Height="55" Background="#293a4c">
+            <Button Width="70" Height="60" Background="#293a4c">
                 <Button.Content>
                     <StackPanel>
-                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="Cog" Foreground="#8393a3" FontSize="25" />
+                        <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="Cog" Foreground="#8393a3" FontSize="22" />
                         <TextBlock Foreground="#889798" TextAlignment="Center">Настройки</TextBlock>
                     </StackPanel>
                 </Button.Content>
             </Button>
 
-            <Button Width="70" Height="55" Background="#293a4c">
+            <Button Width="70" Height="60" Background="#293a4c">
                 <Button.Content>
                     <StackPanel>
                         <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="Key" Foreground="#8393a3" FontSize="25" />
