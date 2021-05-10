@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\background.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FontAwesome.Sharp" Version="5.15.3" />
     <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.31" />
   </ItemGroup>
@@ -14,6 +18,12 @@
   <ItemGroup>
     <ProjectReference Include="..\BankApp.Model\BankApp.Model.csproj" />
     <ProjectReference Include="..\BankApp.UI.Themes\BankApp.UI.Themes.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\background.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

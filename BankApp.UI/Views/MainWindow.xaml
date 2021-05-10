@@ -36,7 +36,7 @@
                 <SolidColorBrush Color="#f1f1f1"/>
             </DockPanel.Background>
             <DockPanel.Children>
-                <StackPanel Orientation="Horizontal" Width="100" HorizontalAlignment="Right">
+                <StackPanel Orientation="Horizontal" Width="60" HorizontalAlignment="Right">
                     <TextBlock Width="20" Foreground="#9a9a9a" fa:Awesome.Inline=":windowminimize:"/>
                     <TextBlock Width="20" Foreground="#9a9a9a" fa:Awesome.Inline=":windowmaximize:"/>
                     <TextBlock Width="20" Foreground="#9a9a9a" fa:Awesome.Inline=":times:"/>
@@ -110,15 +110,17 @@
             
         </StackPanel>
         
-        <ContentControl
+        <ContentControl 
             Grid.Column="1"
             Grid.Row="1"
             Content="{Binding CurrentViewModel}">
+            
             <ContentControl.Resources>
                 <DataTemplate DataType="{x:Type viewmodels:LoginViewModel}">
                     <views:LoginView />
                 </DataTemplate>
             </ContentControl.Resources>
+            
         </ContentControl>
         
     </Grid>
