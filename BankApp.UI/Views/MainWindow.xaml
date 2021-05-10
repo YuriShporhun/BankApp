@@ -27,7 +27,7 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.ColumnSpan="2">
-            <Label Height="100">
+            <Label Height="20">
                 <i:Interaction.Triggers>
                     <i:EventTrigger EventName="MouseDown" >
                         <i:InvokeCommandAction Command="{Binding DragWindow}" CommandParameter="{Binding ElementName=mainwnd}" />
