@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Text;
+using System.Windows;
 using System.Windows.Input;
 
 namespace BankApp.UI.ViewModels
@@ -21,6 +22,14 @@ namespace BankApp.UI.ViewModels
         void InitCommands()
         {
             DragWindow = new RelayCommand(OnDragWindow);
+            MaximizeWindow = new RelayCommand(OnMaximizeWindow);
+            MinimizeWindow = new RelayCommand(OnMinimizeWindow);
+        }
+
+        private void OnMinimizeWindow(object mainWnd)
+        {
+            var window = mainWnd as MainWindow;
+            window.WindowState = WindowState.Minimized;
         }
 
         void OnDragWindow(object mainWnd)
@@ -29,8 +38,15 @@ namespace BankApp.UI.ViewModels
             window.DragMove();
         }
 
-        public ICommand DragWindow { get; set; }
+        void OnMaximizeWindow(object mainWnd)
+        {
+            var window = mainWnd as MainWindow;
+            window.WindowState = WindowState.Maximized;
+        }
 
+        public ICommand DragWindow { get; private set; }
+        public ICommand MaximizeWindow { get; private set; }
+        public ICommand MinimizeWindow { get; private set; }
 
     }
 }
