@@ -54,7 +54,7 @@
                 </Button.Content>
             </Button>
 
-            <Button Width="70" Height="60" Background="#293a4c">
+            <Button Width="70" Height="60" Background="#293a4c" Command="{Binding OpenCustomersWindow}">
                 <Button.Content>
                     <StackPanel>
                         <fa:IconBlock Width="35" Height="35" Padding="0 2 0 0" Icon="PeopleArrows" Foreground="#8393a3" FontSize="22" />
@@ -118,6 +118,9 @@
             <ContentControl.Resources>
                 <DataTemplate DataType="{x:Type viewmodels:LoginViewModel}">
                     <views:LoginView />
+                </DataTemplate>
+                <DataTemplate DataType="{x:Type viewmodels:CustomersViewModel}">
+                    <views:CustomersView />
                 </DataTemplate>
             </ContentControl.Resources>
             

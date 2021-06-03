@@ -9,9 +9,19 @@ using System.Windows.Input;
 
 namespace BankApp.UI.ViewModels
 {
-    public class MainViewModel: ViewModelBase
+    public class MainViewModel : ViewModelBase
     {
-        public ViewModelBase CurrentViewModel { get; }
+        ViewModelBase currentViewModel;
+
+        public ViewModelBase CurrentViewModel
+        {
+            get => currentViewModel;
+            set
+            {
+                currentViewModel = value;
+                RaisePropertyChanged(nameof(CurrentViewModel));
+            }
+        }
 
         public MainViewModel()
         {
@@ -24,6 +34,12 @@ namespace BankApp.UI.ViewModels
             DragWindow = new RelayCommand(OnDragWindow);
             MaximizeWindow = new RelayCommand(OnMaximizeWindow);
             MinimizeWindow = new RelayCommand(OnMinimizeWindow);
+            OpenCustomersWindow = new RelayCommand(OnOpenCustomersWindow);
+        }
+
+        private void OnOpenCustomersWindow(object obj)
+        {
+            CurrentViewModel = new CustomersViewModel();
         }
 
         private void OnMinimizeWindow(object mainWnd)
@@ -47,6 +63,7 @@ namespace BankApp.UI.ViewModels
         public ICommand DragWindow { get; private set; }
         public ICommand MaximizeWindow { get; private set; }
         public ICommand MinimizeWindow { get; private set; }
+        public ICommand OpenCustomersWindow { get; private set; }
 
     }
 }
